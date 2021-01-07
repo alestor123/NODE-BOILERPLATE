@@ -1,0 +1,1 @@
+module.exports = () => console.log(process.argv[2] || 'alestor123' + ' Love OSS')
