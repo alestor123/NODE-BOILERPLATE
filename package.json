@@ -2,12 +2,25 @@
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "This is a simple code for a node boilerplate",
+  "funding": "https://alestor123.is-a.dev/donate",
   "main": "App.js",
   "bin": {
     "boilerplate": "cli.js"
   },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "App.js",
+    "cli.js",
+    "opt.js",
+    "imgpdf.js",
+    "assets/man/help.man"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && node test.js | tap-spec",
+    "example": "node run.js",
+    "lint": "standard . --fix"
   },
   "repository": {
     "type": "git",
@@ -18,5 +31,14 @@
   "bugs": {
     "url": "https://github.com/alestor123/NODE-BOILERPLATE/issues"
   },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tap": "^15.0.9",
+    "tap-spec": "^5.0.0"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
   "homepage": "https://github.com/alestor123/NODE-BOILERPLATE#readme"
 }
